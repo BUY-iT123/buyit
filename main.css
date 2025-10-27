@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --BACKGROUND-COLOR: #F1F3F2;
+    --TEXT-COLOR: #000;
+    --MAIN-COLOR: #19C463;
+    --FADE-OF-MAIN-COLOR: #A3E7C1;
+}
+
+body{
+    background-color: var(--BACKGROUND-COLOR);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+a{
+    color: var(--TEXT-COLOR);
+    text-decoration: none;
+}
+
+/* header side of screen */
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+header .header-side-for-logo-nd-bar{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;padding: 8px;
+   background-color: var(--MAIN-COLOR);
+}
+
+header .header-side-for-logo-nd-bar img{
+   width: 20%;
+}
+
+header .header-side-for-logo-nd-bar .ri-layout-right-line{
+   font-size: 40px;
+   font-weight: bold;
+}
+
+header .erosection-side{
+   width: 100%;
+   overflow-x: scroll;
+}
+
+header .erosection-side::-webkit-scrollbar{
+   display: none;
+}
+
+header .erosection-side .scroll-ero-section{
+   width: 100%;
+   display: flex;
+   padding: 8px;
+   gap: 10px;
+}
+
+header .erosection-side .scroll-ero-section img{
+   width: 80%;
+   display: flex;
+   border-radius: 14px;
+}
+
+/* BUY iT HEAD SIDE FOR SHOW */
+body .side-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background-color: var(--BACKGROUND-COLOR);
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+    display: none;
+}
+
+body .side-bar p{
+   text-align: right;
+   font-size: clamp(1.5rem, 1.9vw, 1.5rem);
+   font-weight: bold;
+}
+
+body .overlay{
+   background-color: rgba(255, 255, 255, 0.5); 
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   backdrop-filter: blur(4px);
+   display: none;
+}
+
+body .ri-close-circle-line{
+   position: fixed;
+   top: 30px;
+   left: 30px;
+   z-index: 3;
+   color: black;
+   scale: 4;
+   display: none;
+}
+
+body h3{
+    width: 100%;
+    text-align: center;
+    font-size: clamp(1rem, 1vw, 2rem);
+    font-weight: bold;
+    padding: 4px;
+}
+
+body .grid-for-all-products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    padding: 4px;
+}
+
+body .grid-for-all-products .products-card{
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 5px;
+    padding: 8px;
+}
+
+body .grid-for-all-products .products-card .product-image{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+body .grid-for-all-products .products-card .product-image span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--FADE-OF-MAIN-COLOR);
+    padding: 4px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 1.2vw, 1.1rem, 2vw;
+    font-weight: bold;
+}
+
+body .grid-for-all-products .products-card .product-image img{
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+body .grid-for-all-products .products-card .product-information {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+body .grid-for-all-products .products-card .product-information p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+body .grid-for-all-products .products-card .product-information a {
+    display: block;
+    height: fit-content;
+    cursor: pointer;
+}
+
+body .grid-for-all-products .products-card .product-information a button{
+    width: 100%;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 12px;
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--MAIN-COLOR);
+    color: #fff;
+}
+
+/* Image Display Side */
+body .show-product-image{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+body .show-product-image .image{
+    width: 70%;
+    height: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+body .show-product-image .image img{
+    width: 100%;
+    height: 100%;
+
+}
+
+body .show-product-image .image .ri-close-circle-fill{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: black;
+    z-index: 200;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
