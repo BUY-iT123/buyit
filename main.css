@@ -41,7 +41,7 @@ header .header-side-for-logo-nd-bar{
    align-items: center;
    justify-content: space-between;padding: 8px;
    background-color: var(--MAIN-COLOR);
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 10000;
@@ -282,5 +282,6 @@ body .show-product-image .image .ri-close-circle-fill{
     cursor: pointer;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
+
 
 
