@@ -44,6 +44,7 @@ header .header-side-for-logo-nd-bar{
     position: fixed;
     width: 100%;
     top: 0;
+    margin-bottom: 30px;
 }
 
 header .header-side-for-logo-nd-bar .search-box-frames{
@@ -271,6 +272,7 @@ body .show-product-image .image .ri-close-circle-fill{
     cursor: pointer;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
+
 
 
 
