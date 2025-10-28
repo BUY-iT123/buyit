@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     // if no match, show alert but restore all products
     if (!anyMatch) {
         alert(`No results found for "${raw}"`);
-        products.forEach(card => card.style.display = "block");
+        products.forEach(card => card.style.display = "flex");
     }
     });
 
@@ -147,3 +147,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 
 })
+
