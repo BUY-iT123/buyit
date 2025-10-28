@@ -44,7 +44,7 @@ header .header-side-for-logo-nd-bar{
     position: fixed;
     width: 100%;
     top: 0;
-    margin-bottom: 30px;
+    z-index: 10000;
 }
 
 header .header-side-for-logo-nd-bar .search-box-frames{
@@ -79,6 +79,7 @@ header .header-side-for-logo-nd-bar .ri-layout-right-line{
 }
 
 header .erosection-side{
+    margin-top: 80px;
    width: 100%;
    overflow-x: scroll;
 }
@@ -98,6 +99,15 @@ header .erosection-side .scroll-ero-section img{
    width: 80%;
    display: flex;
    border-radius: 14px;
+}
+
+/* Main Side */
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 /* BUY iT HEAD SIDE FOR SHOW */
@@ -272,8 +282,5 @@ body .show-product-image .image .ri-close-circle-fill{
     cursor: pointer;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
-
-
-
 
 
