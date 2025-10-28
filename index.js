@@ -79,20 +79,24 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 
     ///Contact Vendor Message
-    const button = document.querySelector('.grid-for-all-products .left-side-products .products-card .product-information a button');
+    const buttons = document.querySelectorAll('.grid-for-all-products .left-side-products .products-card .product-information a button');
 
-    button.addEventListener('click', ()=>{
-        const productInfo = button.closest('.product-information')
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const productInfo = button.closest('.product-information');
         const productName = productInfo.querySelector('.product-name').innerText;
         const productStore = productInfo.querySelector('.vendor-store-name').innerText;
         const vendorNumber = productInfo.querySelector('a.contact-vendor').dataset.number;
-        const message =`Hi, I want to order ${productName} from your store ${productStore}, I saw it on BUY iT website`;
 
+        const message = `Hi, I want to order ${productName} from your store ${productStore}, I saw it on BUY iT website`;
         const encodedMessage = encodeURIComponent(message);
-
         const whatsappURL = `https://wa.me/${vendorNumber}?text=${encodedMessage}`;
 
-        window.open(whatsappURL, '_blank')
+        window.open(whatsappURL, '_blank');
+    });
+});
+
     })
 
 })
+
