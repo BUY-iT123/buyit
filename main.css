@@ -79,7 +79,7 @@ header .header-side-for-logo-nd-bar .ri-layout-right-line{
 }
 
 header .erosection-side{
-    margin-top: 80px;
+    margin-top: 30%;
    width: 100%;
    overflow-x: scroll;
 }
@@ -282,6 +282,7 @@ body .show-product-image .image .ri-close-circle-fill{
     cursor: pointer;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
+
 
 
 
