@@ -175,12 +175,18 @@ body .grid-for-all-products .left-side-products{
     display: flex;
     flex-direction: column;
     gap: 4px;
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
 }
 
 body .grid-for-all-products .right-side-products{
     display: flex;
     flex-direction: column;
     gap: 4px;
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
 }
 
 body .grid-for-all-products .products-card{
@@ -284,6 +290,7 @@ body .show-product-image .image .ri-close-circle-fill{
     cursor: pointer;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
+
 
 
 
