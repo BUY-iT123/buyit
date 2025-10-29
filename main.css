@@ -229,11 +229,15 @@ body .grid-for-all-products .products-card .product-information {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 body .grid-for-all-products .products-card .product-information p{
     font-size: 16px;
     font-weight: bold;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 
@@ -294,6 +298,7 @@ body .show-product-image .image .ri-close-circle-fill{
     cursor: pointer;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
+
 
 
 
